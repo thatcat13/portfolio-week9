@@ -1,17 +1,5 @@
 
 
-
-
-
-
-/// Container's maximum width
-/// @type Length
-// $max-width: 1180px !default;
-
-
-
-
-
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
@@ -21,13 +9,9 @@ $breakpoints: (
   'large': 1024px,
 ) !default;
 
-
-
-
-
-
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+//color palette
+$black: rgba(34, 34, 34, 1);
+$white: rgba(255, 255, 255, 1);
+$slate-blue: rgba(61, 90, 128, 1);
+$baby-blue: rgba(152, 193, 217, 1);
+$light-powder-blue: rgba(224, 251, 252, 1);

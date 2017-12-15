@@ -419,6 +419,18 @@ html {
 *::after {
   box-sizing: inherit; }
 
+body {
+  background-color: #e0fbfc; }
+
+@font-face {
+  font-family: "typewriter";
+  src: url("../fonts/typewriter.ttf") format("truetype"); }
+@font-face {
+  font-family: "keys";
+  src: url("../fonts/keys.ttf") format("truetype"); }
+@font-face {
+  font-family: "filled-keys";
+  src: url("../fonts/filled-keys.ttf") format("truetype"); }
 /**
  * Clear inner floats
  */
@@ -448,13 +460,14 @@ body, .wrapper {
  * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
  */
 .header {
+  color: #222222;
   display: flex;
   width: 100%;
   height: 20vh;
-  box-shadow: 0 -1px 9px rgba(0, 0, 0, 0.19);
   background: rgba(0, 0, 0, 0.06);
-  border: 1px solid gray;
-  align-items: center; }
+  align-items: center;
+  background-color: #98c1d9;
+  background: linear-gradient(#3d5a80, #e0fbfc); }
   .header .logo-nav {
     display: flex;
     width: 100%;
@@ -462,16 +475,48 @@ body, .wrapper {
     justify-content: space-between;
     align-items: center;
     object-fit: cover;
-    position: static;
     margin: 1em; }
     .header .logo-nav img {
       height: 100%;
-      width: auto; }
-  .header .nav-list {
-    display: flex; }
+      width: auto;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      -ms-border-radius: 100px;
+      border-radius: 100px;
+      border: 5px solid #222222; }
+    .header .logo-nav ul {
+      display: flex;
+      list-style: none; }
+      .header .logo-nav ul li {
+        padding: 25px; }
+        .header .logo-nav ul li a {
+          text-decoration: none;
+          color: black;
+          font-family: 'Dawning of a New Day', cursive;
+          font-size: 2em; }
 
 .hero {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: 0 auto; }
+  .hero .hero-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center; }
+    .hero .hero-img .alice img {
+      object-fit: cover;
+      align-self: center; }
+    .hero .hero-img p {
+      margin-bottom: 0;
+      margin-top: 50px;
+      font-family: 'Dawning of a New Day', cursive;
+      font-size: 2em; }
+    .hero .hero-img img.pointer {
+      padding-left: 43px;
+      transform: rotateZ(90deg); }
 
 /*# sourceMappingURL=main.css.map */
