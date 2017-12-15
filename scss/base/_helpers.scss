@@ -11,9 +11,14 @@
   display: table;
 }
 
-body, .wrapper {
+body {
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /**
