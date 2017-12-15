@@ -1,0 +1,151 @@
+
+.block1 {
+  display: flex;
+  margin: 20px 100px 0px 100px;
+  align-items: flex-start;
+
+  .block1left {
+    font-family: typewriter;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin: 0px 40px 80px 100px;
+
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-family: 'Dawning of a New Day', cursive;
+      font-size: 4.5em;
+      margin-top: 0;
+      margin-bototm: 30px;
+    }
+
+    .bottom-block1 {
+      margin-top: 150px;
+      width: 50%;
+      align-self: flex-end;
+    }
+    .bottom-block2 {
+      margin-top: 20px;
+      width: 50%;
+      align-self: flex-end;
+    }
+    .bottom-block3 {
+      margin-top: 45px;
+      width: 50%;
+      align-self: flex-end;
+    }
+    .bottom-block4 {
+      margin-top: 75px;
+      width: 50%;
+      align-self: flex-end;
+    }
+    .bottom-block5 {
+      margin-top: 100px;
+      width: 50%;
+      align-self: flex-end;
+    }
+
+  }
+
+  .block1right {
+    display: flex;
+    width: 60%;
+    height: auto;
+    flex-direction: column;
+    margin-top: 100px;
+
+    .block1div1 {
+      align-self: flex-start;
+    }
+
+    .block1div2 {
+      align-self: center;
+    }
+
+    .block1div3 {
+      align-self: flex-start;
+    }
+  }
+}
+
+.img-div1, .img-div2, .img-div3 {
+  width: auto;
+  height: auto;
+  overflow: visible;
+
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    @include border-radius(10px);
+    border: 3px solid $black;
+  }
+
+  .leafTea {
+    transform: rotateZ(-4deg);
+    position: relative;
+    left: 100px;
+  }
+
+  .doge {
+    transform: rotateZ(7deg);
+    position: relative;
+    bottom: 44px;
+  }
+
+  .wallace {
+    transform: rotateZ(-27deg);
+    position: relative;
+    left: 105px;
+    bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .epicodus, .bottom-block1, .bottom-block2, .bottom-block3, .bottom-block4, .bottom-block5 {
+    display: none;
+  }
+
+  .block1 {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0 auto;
+
+    .block1right {
+      margin-top: 0px;
+
+      .leafTea {
+        transform: rotateZ(-4deg);
+        position: relative;
+        left: 100px;
+      }
+
+      .doge {
+        transform: rotateZ(7deg);
+        position: relative;
+        bottom: -6px;
+        left: 75px;
+      }
+
+      .wallace {
+        transform: rotateZ(-27deg);
+        position: relative;
+        left: 105px;
+        bottom: -40px;
+      }
+    }
+
+    .block1left {
+      margin-bottom: 0px;
+
+      p {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
