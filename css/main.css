@@ -444,6 +444,7 @@ body {
   padding: 0; }
 
 .wrapper {
+  min-width: 400px;
   max-width: 1400px;
   margin: 0 auto; }
 
@@ -519,10 +520,17 @@ body {
       margin-top: 50px;
       font-family: 'Dawning of a New Day', cursive;
       font-size: 3em; }
+    .hero .hero-img .pointer-div {
+      transform: rotateZ(90deg); }
     .hero .hero-img img.pointer {
       padding-left: 43px;
-      transform: rotateZ(90deg); }
+      animation: bounce 1.5s linear alternate infinite; }
 
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    transform: translate3d(25px, 0, 0); } }
 @media screen and (max-width: 630px) {
   .logo-nav li {
     display: none; } }
@@ -540,8 +548,7 @@ body {
     width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: right;
-    margin: 0px 40px 80px 100px; }
+    align-items: right; }
     .block1 .block1left p {
       margin: 0; }
     .block1 .block1left h1 {
@@ -576,17 +583,67 @@ body {
     flex-direction: column;
     margin-top: 100px; }
     .block1 .block1right .block1div1 {
-      align-self: flex-start; }
+      align-self: flex-start;
+      position: relative; }
+      .block1 .block1right .block1div1 .heart1 {
+        position: absolute;
+        left: 35%;
+        top: 9%;
+        width: 50px;
+        height: 50px;
+        background: url(../img/heart-icon.png); }
+      .block1 .block1right .block1div1 .heart2 {
+        position: absolute;
+        left: 114%;
+        top: 79%;
+        width: 50px;
+        height: 50px;
+        background: url(../img/heart-icon.png);
+        transform: rotateZ(175deg); }
     .block1 .block1right .block1div2 {
-      align-self: center; }
+      align-self: center;
+      position: relative; }
+      .block1 .block1right .block1div2 .heart3 {
+        position: absolute;
+        left: 9%;
+        top: 20%;
+        width: 50px;
+        height: 50px;
+        background: url(../img/heart-icon.png);
+        transform: rotateZ(7deg); }
+      .block1 .block1right .block1div2 .heart4 {
+        position: absolute;
+        left: 74%;
+        top: 104%;
+        width: 50px;
+        height: 50px;
+        background: url(../img/heart-icon.png);
+        transform: rotateZ(186deg); }
     .block1 .block1right .block1div3 {
-      align-self: flex-start; }
+      align-self: flex-start;
+      position: relative; }
+      .block1 .block1right .block1div3 .heart5 {
+        position: absolute;
+        left: 26%;
+        top: 74%;
+        width: 50px;
+        height: 50px;
+        background: url(../img/heart-icon.png);
+        transform: rotateZ(-26deg); }
+      .block1 .block1right .block1div3 .heart6 {
+        position: absolute;
+        left: 127%;
+        top: 106%;
+        width: 50px;
+        height: 50px;
+        background: url(../img/heart-icon.png);
+        transform: rotateZ(154deg); }
 
 .img-div1, .img-div2, .img-div3 {
   width: auto;
   height: auto;
   overflow: visible; }
-  .img-div1 img, .img-div2 img, .img-div3 img {
+  .img-div1 .leafTea, .img-div1 .doge, .img-div1 .wallace, .img-div2 .leafTea, .img-div2 .doge, .img-div2 .wallace, .img-div3 .leafTea, .img-div3 .doge, .img-div3 .wallace {
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -594,7 +651,8 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
-    border: 3px solid #222222; }
+    border: 3px solid #222222;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5); }
   .img-div1 .leafTea, .img-div2 .leafTea, .img-div3 .leafTea {
     transform: rotateZ(-4deg);
     position: relative;
@@ -638,5 +696,12 @@ body {
       margin-bottom: 0px; }
       .block1 .block1left p {
         margin-bottom: 30px; } }
+@media screen and (min-width: 1001px) {
+  .img-div1, .img-div2, .img-div3 {
+    transform: scale(1.3); }
+    .img-div1 .doge, .img-div2 .doge, .img-div3 .doge {
+      bottom: -60px; }
+    .img-div1 .wallace, .img-div2 .wallace, .img-div3 .wallace {
+      bottom: -145px; } }
 
 /*# sourceMappingURL=main.css.map */
