@@ -1,16 +1,16 @@
-
+.main-content {
+  margin: 0 auto;
+}
 .block1 {
   display: flex;
-  margin: 20px 100px 0px 100px;
-  align-items: flex-start;
+
 
   .block1left {
     font-family: typewriter;
     width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: right;
-    // margin: 0 auto;
+    align-items: center;
 
     p {
       margin: 0;
@@ -56,7 +56,8 @@
     width: 60%;
     height: auto;
     flex-direction: column;
-    margin-top: 100px;
+
+    align-items: center;
 
     .block1div1 {
       align-self: flex-start;
@@ -64,16 +65,17 @@
 
       .heart1 {
         position: absolute;
-        left: 35%;
-        top: 9%;
+        left: 0%;
+        top: 7%;
         width: 50px;
         height: 50px;
         background: url(../img/heart-icon.png);
+        transform: rotateZ(-3deg);
       }
       .heart2 {
         position: absolute;
-        left: 114%;
-        top: 79%;
+        left: 81%;
+        top: 78%;
         width: 50px;
         height: 50px;
         background: url(../img/heart-icon.png);
@@ -87,16 +89,16 @@
       .heart3 {
         position: absolute;
         left: 9%;
-        top: 20%;
+        top: -2%;
         width: 50px;
         height: 50px;
         background: url(../img/heart-icon.png);
-        transform: rotateZ(7deg);
+        transform: rotateZ(8deg);
       }
       .heart4 {
         position: absolute;
         left: 74%;
-        top: 104%;
+        top: 84%;
         width: 50px;
         height: 50px;
         background: url(../img/heart-icon.png);
@@ -110,8 +112,8 @@
 
       .heart5 {
         position: absolute;
-        left: 26%;
-        top: 74%;
+        left: -10%;
+        top: 26%;
         width: 50px;
         height: 50px;
         background: url(../img/heart-icon.png);
@@ -119,8 +121,8 @@
       }
       .heart6 {
         position: absolute;
-        left: 127%;
-        top: 106%;
+        left: 95%;
+        top: 58%;
         width: 50px;
         height: 50px;
         background: url(../img/heart-icon.png);
@@ -148,20 +150,20 @@
   .leafTea {
     transform: rotateZ(-4deg);
     position: relative;
-    left: 100px;
+    // left: 100px;
   }
 
   .doge {
     transform: rotateZ(7deg);
     position: relative;
-    bottom: 44px;
+    // bottom: 44px;
   }
 
   .wallace {
     transform: rotateZ(-27deg);
     position: relative;
-    left: 105px;
-    bottom: 50px;
+    // left: 105px;
+    // bottom: 50px;
   }
 }
 
@@ -177,31 +179,32 @@
     margin: 0 auto;
 
     .block1right {
-      margin-top: 0px;
+      // width: 50%;
 
       .leafTea {
         transform: rotateZ(-4deg);
         position: relative;
-        left: 100px;
+        // left: 100px;
       }
 
       .doge {
         transform: rotateZ(7deg);
         position: relative;
-        bottom: -6px;
-        left: 75px;
+        // bottom: -6px;
+        // left: 75px;
       }
 
       .wallace {
         transform: rotateZ(-27deg);
         position: relative;
-        left: 105px;
-        bottom: -40px;
+        // left: 105px;
+        // bottom: -40px;
       }
     }
 
     .block1left {
-      margin-bottom: 0px;
+      padding:50px;
+
 
       p {
         margin-bottom: 30px;

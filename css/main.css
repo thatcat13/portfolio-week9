@@ -524,14 +524,17 @@ body {
       transform: rotateZ(90deg); }
     .hero .hero-img img.pointer {
       padding-left: 43px;
-      animation: bounce 1.5s linear alternate infinite; }
+      animation: bounce 1.25s linear alternate infinite; }
 
 @keyframes bounce {
   from {
     transform: translate3d(0, 0, 0); }
   to {
-    transform: translate3d(25px, 0, 0); } }
+    transform: translate3d(20px, 0, 0); } }
 @media screen and (max-width: 630px) {
+  .logo-nav img {
+    transform: scale(0.8); }
+
   .logo-nav li {
     display: none; } }
 @media screen and (min-width: 1100px) {
@@ -539,16 +542,17 @@ body {
     padding-left: 150px; }
     .logo-nav ul {
       padding-right: 150px; } }
+.main-content {
+  margin: 0 auto; }
+
 .block1 {
-  display: flex;
-  margin: 20px 100px 0px 100px;
-  align-items: flex-start; }
+  display: flex; }
   .block1 .block1left {
     font-family: typewriter;
     width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: right; }
+    align-items: center; }
     .block1 .block1left p {
       margin: 0; }
     .block1 .block1left h1 {
@@ -581,21 +585,22 @@ body {
     width: 60%;
     height: auto;
     flex-direction: column;
-    margin-top: 100px; }
+    align-items: center; }
     .block1 .block1right .block1div1 {
       align-self: flex-start;
       position: relative; }
       .block1 .block1right .block1div1 .heart1 {
         position: absolute;
-        left: 35%;
-        top: 9%;
+        left: 0%;
+        top: 7%;
         width: 50px;
         height: 50px;
-        background: url(../img/heart-icon.png); }
+        background: url(../img/heart-icon.png);
+        transform: rotateZ(-3deg); }
       .block1 .block1right .block1div1 .heart2 {
         position: absolute;
-        left: 114%;
-        top: 79%;
+        left: 81%;
+        top: 78%;
         width: 50px;
         height: 50px;
         background: url(../img/heart-icon.png);
@@ -606,15 +611,15 @@ body {
       .block1 .block1right .block1div2 .heart3 {
         position: absolute;
         left: 9%;
-        top: 20%;
+        top: -2%;
         width: 50px;
         height: 50px;
         background: url(../img/heart-icon.png);
-        transform: rotateZ(7deg); }
+        transform: rotateZ(8deg); }
       .block1 .block1right .block1div2 .heart4 {
         position: absolute;
         left: 74%;
-        top: 104%;
+        top: 84%;
         width: 50px;
         height: 50px;
         background: url(../img/heart-icon.png);
@@ -624,16 +629,16 @@ body {
       position: relative; }
       .block1 .block1right .block1div3 .heart5 {
         position: absolute;
-        left: 26%;
-        top: 74%;
+        left: -10%;
+        top: 26%;
         width: 50px;
         height: 50px;
         background: url(../img/heart-icon.png);
         transform: rotateZ(-26deg); }
       .block1 .block1right .block1div3 .heart6 {
         position: absolute;
-        left: 127%;
-        top: 106%;
+        left: 95%;
+        top: 58%;
         width: 50px;
         height: 50px;
         background: url(../img/heart-icon.png);
@@ -655,17 +660,13 @@ body {
     box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.5); }
   .img-div1 .leafTea, .img-div2 .leafTea, .img-div3 .leafTea {
     transform: rotateZ(-4deg);
-    position: relative;
-    left: 100px; }
+    position: relative; }
   .img-div1 .doge, .img-div2 .doge, .img-div3 .doge {
     transform: rotateZ(7deg);
-    position: relative;
-    bottom: 44px; }
+    position: relative; }
   .img-div1 .wallace, .img-div2 .wallace, .img-div3 .wallace {
     transform: rotateZ(-27deg);
-    position: relative;
-    left: 105px;
-    bottom: 50px; }
+    position: relative; }
 
 @media screen and (max-width: 1000px) {
   .epicodus, .bottom-block1, .bottom-block2, .bottom-block3, .bottom-block4, .bottom-block5 {
@@ -676,24 +677,17 @@ body {
     align-items: center;
     padding-top: 50px;
     margin: 0 auto; }
-    .block1 .block1right {
-      margin-top: 0px; }
-      .block1 .block1right .leafTea {
-        transform: rotateZ(-4deg);
-        position: relative;
-        left: 100px; }
-      .block1 .block1right .doge {
-        transform: rotateZ(7deg);
-        position: relative;
-        bottom: -6px;
-        left: 75px; }
-      .block1 .block1right .wallace {
-        transform: rotateZ(-27deg);
-        position: relative;
-        left: 105px;
-        bottom: -40px; }
+    .block1 .block1right .leafTea {
+      transform: rotateZ(-4deg);
+      position: relative; }
+    .block1 .block1right .doge {
+      transform: rotateZ(7deg);
+      position: relative; }
+    .block1 .block1right .wallace {
+      transform: rotateZ(-27deg);
+      position: relative; }
     .block1 .block1left {
-      margin-bottom: 0px; }
+      padding: 50px; }
       .block1 .block1left p {
         margin-bottom: 30px; } }
 @media screen and (min-width: 1001px) {

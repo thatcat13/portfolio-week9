@@ -67,17 +67,21 @@
         }
         img.pointer {
           padding-left: 43px;
-          animation: bounce 1.5s linear alternate infinite;
+          animation: bounce 1.25s linear alternate infinite;
         }
     }
 }
 
 @keyframes bounce {
   from { transform: translate3d(0, 0, 0);     }
-  to   { transform: translate3d(25px, 0, 0); }
+  to   { transform: translate3d(20px, 0, 0); }
 }
 
 @media screen and (max-width: 630px){
+.logo-nav img {
+  transform: scale(0.8);
+}
+
   .logo-nav li {
     display: none;
   }
