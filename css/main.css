@@ -549,10 +549,10 @@ body {
   display: flex; }
   .block1 .block1left {
     font-family: typewriter;
-    width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding: 10px; }
     .block1 .block1left p {
       margin: 0; }
     .block1 .block1left h1 {
@@ -587,7 +587,7 @@ body {
     flex-direction: column;
     align-items: center; }
     .block1 .block1right .block1div1 {
-      align-self: flex-start;
+      align-self: center;
       position: relative; }
       .block1 .block1right .block1div1 .heart1 {
         position: absolute;
@@ -625,7 +625,7 @@ body {
         background: url(../img/heart-icon.png);
         transform: rotateZ(186deg); }
     .block1 .block1right .block1div3 {
-      align-self: flex-start;
+      align-self: center;
       position: relative; }
       .block1 .block1right .block1div3 .heart5 {
         position: absolute;
@@ -686,10 +686,8 @@ body {
     .block1 .block1right .wallace {
       transform: rotateZ(-27deg);
       position: relative; }
-    .block1 .block1left {
-      padding: 50px; }
-      .block1 .block1left p {
-        margin-bottom: 30px; } }
+    .block1 .block1left p {
+      margin-bottom: 30px; } }
 @media screen and (min-width: 1001px) {
   .img-div1, .img-div2, .img-div3 {
     transform: scale(1.3); }

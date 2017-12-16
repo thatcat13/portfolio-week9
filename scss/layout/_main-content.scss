@@ -7,10 +7,11 @@
 
   .block1left {
     font-family: typewriter;
-    width: 30%;
+    // width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
 
     p {
       margin: 0;
@@ -56,11 +57,10 @@
     width: 60%;
     height: auto;
     flex-direction: column;
-
     align-items: center;
 
     .block1div1 {
-      align-self: flex-start;
+      align-self: center;
       position: relative;
 
       .heart1 {
@@ -107,7 +107,7 @@
     }
 
     .block1div3 {
-      align-self: flex-start;
+      align-self: center;
       position: relative;
 
       .heart5 {
@@ -203,7 +203,7 @@
     }
 
     .block1left {
-      padding:50px;
+      // padding:50px;
 
 
       p {
@@ -214,6 +214,7 @@
 }
 
 @media screen and (min-width: 1001px) {
+
   .img-div1, .img-div2, .img-div3 {
     transform: scale(1.3);
 
