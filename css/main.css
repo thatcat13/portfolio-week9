@@ -546,7 +546,8 @@ body {
   margin: 0 auto; }
 
 .block1 {
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
   .block1 .block1left {
     font-family: typewriter;
     display: flex;
@@ -582,10 +583,10 @@ body {
       align-self: flex-end; }
   .block1 .block1right {
     display: flex;
-    width: 60%;
     height: auto;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
     .block1 .block1right .block1div1 {
       align-self: center;
       position: relative; }
@@ -668,13 +669,28 @@ body {
     transform: rotateZ(-27deg);
     position: relative; }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 630px) {
+  .block1 {
+    flex-direction: row; }
+
+  .block1 > * {
+    flex: 1;
+    margin-top: 50px; }
+
+  .block1left {
+    order: -1;
+    margin-left: 50px; }
+
+  .block1right {
+    flex: 3; } }
+@media screen and (max-width: 629px) {
+  .block1 {
+    flex-direction: column; } }
+@media screen and (max-width: 800px) {
   .epicodus, .bottom-block1, .bottom-block2, .bottom-block3, .bottom-block4, .bottom-block5 {
     display: none; }
 
   .block1 {
-    flex-direction: column;
-    align-items: center;
     padding-top: 50px;
     margin: 0 auto; }
     .block1 .block1right .leafTea {

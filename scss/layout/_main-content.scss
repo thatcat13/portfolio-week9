@@ -1,13 +1,16 @@
 .main-content {
   margin: 0 auto;
+  // width: 100vw;
+  // height: auto;
 }
 .block1 {
   display: flex;
-
+  flex-direction: column;
+  // width: 100%;
+  // align-items: center;
 
   .block1left {
     font-family: typewriter;
-    // width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,10 +57,10 @@
 
   .block1right {
     display: flex;
-    width: 60%;
     height: auto;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     .block1div1 {
       align-self: center;
@@ -167,19 +170,47 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 630px) {
+  .block1 {
+    flex-direction: row;
+  }
+
+  .block1 > * {
+    flex: 1;
+    margin-top: 50px;
+  }
+
+  .block1left {
+    order: -1;
+    margin-left: 50px;
+
+  }
+
+  .block1right {
+    flex: 3;
+  }
+}
+
+@media screen and (max-width: 629px) {
+  .block1 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .epicodus, .bottom-block1, .bottom-block2, .bottom-block3, .bottom-block4, .bottom-block5 {
     display: none;
   }
 
   .block1 {
-    flex-direction: column;
-    align-items: center;
+    // flex-direction: row;
+    // align-items: flex-start;
     padding-top: 50px;
     margin: 0 auto;
 
     .block1right {
-      // width: 50%;
+      // width: 60vw;
+
 
       .leafTea {
         transform: rotateZ(-4deg);
@@ -203,7 +234,7 @@
     }
 
     .block1left {
-      // padding:50px;
+      // width: 35vw;
 
 
       p {
